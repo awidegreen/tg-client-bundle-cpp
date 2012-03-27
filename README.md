@@ -3,9 +3,9 @@
 This bundle should be used as a starting point for the "TheGame" TDD-Excersice. It provides a wrapper implementation 
 for using linux sockets, string parser and a test-framework:
 
-* sockwrpr
-* strtk: http://www.codeproject.com/KB/recipes/Tokenizer.aspx?display=Mobile&fid=990812 and http://www.partow.net/programming/strtk/index.html
-* google testframework: http://code.google.com/p/googletest/
+* [sockwrpr] (https://github.com/awidegreen/codebucket/tree/master/cpp/socket_wrapper) 
+* [strtk](http://www.partow.net/programming/strtk/index.html) [strtk article](http://www.codeproject.com/KB/recipes/Tokenizer.aspx?display=Mobile&fid=990812)
+* [google testframework](http://code.google.com/p/googletest/)
 
 ##Installation
 ==============
@@ -34,14 +34,14 @@ An example implementation of the client is located in *src/tg_client.cpp*. It is
 After running the setup target your folder should look like this:
 <pre>
 .
-|-files  (gtest*.zip)
+|-files/ (gtest*.zip)
 |-gtest/ (googletest framework including "include" dir)
 |-src/   (source files, include tg_client.cpp, sockwrpr/.*, strtk/strtk.hpp)
 |-lib/   (libgtest.a)
 |-obj/   (obj-files dir)
 |-test/  (test sources)
 |-Makefile
-|-tg_client  (make tg_client)
+|-tg_client       (make tg_client)
 |-tg_client_test  (make test)
 </pre>
 
@@ -62,6 +62,6 @@ After running the setup target your folder should look like this:
 It is recommended to use `make test_run` to execute the TestCases.
 
 ##Other
-========
+=======
 This bundle does not use the boost library for *strtk* (disabled during compile process).
 
